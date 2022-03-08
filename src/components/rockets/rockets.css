@@ -9,9 +9,9 @@
   justify-content: center;
   width: 75%;
   margin: 0 auto 50px auto;
-  box-shadow: 0px 0px 5px 1px rgb(25, 141, 207);
-  -webkit-box-shadow: 0px 0px 5px 1px rgb(25, 141, 207);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0 0 5px 1px rgb(25, 141, 207);
+  -webkit-box-shadow: 0 0 5px 1px rgb(25, 141, 207);
+  -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 .rocket--image {
@@ -47,11 +47,11 @@
 .rocket--btn {
   border-radius: 10px;
   font-size: 0.9em;
-  padding: 7px ;
+  padding: 7px;
   width: 150px;
-  box-shadow: -5px 5px 5px -4px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -5px 5px 5px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: -5px 5px 5px -4px rgba(0,0,0,0.75);
+  box-shadow: -5px 5px 5px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -5px 5px 5px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 5px 5px -4px rgba(0, 0, 0, 0.75);
 }
 
 .reserve--rocket {
