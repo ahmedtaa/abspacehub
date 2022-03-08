@@ -1,0 +1,67 @@
+.rockets--container {
+  padding: 50px 0 100px 0;
+}
+
+.rocket--card {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto 50px auto;
+  box-shadow: 0px 0px 5px 1px rgb(25, 141, 207);
+  -webkit-box-shadow: 0px 0px 5px 1px rgb(25, 141, 207);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+.rocket--image {
+  height: 250px;
+  width: 320px;
+}
+
+.rocket--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rocket--name {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rocket--description {
+  text-align: justify;
+  padding-right: 25px;
+}
+
+.reserved--badge {
+  background-color: rgb(32, 151, 145);
+  border-radius: 20px;
+  padding: 2px 10px;
+  color: #fefefe;
+  margin-right: 5px;
+}
+
+.rocket--btn {
+  border-radius: 10px;
+  font-size: 0.9em;
+  padding: 7px ;
+  width: 150px;
+  box-shadow: -5px 5px 5px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -5px 5px 5px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 5px 5px -4px rgba(0,0,0,0.75);
+}
+
+.reserve--rocket {
+  background-color: rgb(25, 141, 207);
+  border: none;
+  color: white;
+}
+
+.cancel--rocket {
+  background-color: white;
+  border: 1px solid grey;
+  color: gray;
+}
