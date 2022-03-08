@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <nav className="header">
         <div className="logo--header">
-          <img src={appLogo} alt="app logo" />
+          <img className="logo--image" src={appLogo} alt="app logo" />
           <h1>Space Travellers&apos; Hub</h1>
         </div>
         <ul className="nav--all">
