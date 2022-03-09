@@ -24,9 +24,9 @@ export default function MissionsList() {
             <td>{mission.description}</td>
             <td>
               {mission.joined ? (
-                <Badge bg="secondary">NOT S MEMBER</Badge>
-              ) : (
                 <Badge bg="primary">Active Member</Badge>
+              ) : (
+                <Badge bg="secondary">NOT S MEMBER</Badge>
               )}
             </td>
             <td>
