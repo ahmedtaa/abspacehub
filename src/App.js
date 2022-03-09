@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import './App.css';
 import RocketsList from './components/rockets/RocketsList';
@@ -9,7 +9,7 @@ import MissionsList from './components/missions/MissionsList';
 
 export default function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" exact element={<RocketsList />} />
@@ -17,7 +17,6 @@ export default function App() {
         <Route path="/dragons" element={<DragonList />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
-
-    </Router>
+    </>
   );
 }
