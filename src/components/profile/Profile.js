@@ -1,15 +1,17 @@
-import React from "react";
-import { useSelector } from "react-redux";
+/* eslint-disable camelcase */
+
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Profile = () => {
   const rockets = useSelector((state) => state.rockets).filter(
-    ({ reserved }) => reserved
+    ({ reserved }) => reserved,
   );
   const missions = useSelector((state) => state.missionsReducer).filter(
-    ({ joined }) => joined
+    ({ joined }) => joined,
   );
   const dragons = useSelector((state) => state.dragons.dragons).filter(
-    ({ reserved }) => reserved
+    ({ reserved }) => reserved,
   );
 
   return (
