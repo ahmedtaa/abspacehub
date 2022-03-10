@@ -1,48 +1,45 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchDragons } from '../../redux/dragons/dragons';
+import React from "react";
+import { useSelector } from "react-redux";
 
 const Profile = () => {
-  const dragons = useSelector((state) => state.dragons.dragons);
-  const dispatch = useDispatch();
+  const rockets = useSelector((state) => state.rockets).filter(
+    ({ reserved }) => reserved
+  );
+  const missions = useSelector((state) => state.missionsReducer).filter(
+    ({ joined }) => joined
+  );
+  const dragons = useSelector((state) => state.dragons.dragons).filter(
+    ({ reserved }) => reserved
+  );
 
-  useEffect(() => {
-    if (!dragons) {
-      dispatch(fetchDragons());
-    }
-  });
-
-  const reserveData = dragons.filter((data) => data.reserved === true && data);
   return (
     <>
-      <section className="profileSection">
-        <div className="dragonsCard">
-          <h2 className="dragonsName">My Dragons</h2>
-          {reserveData.map((dragon) => (
-            <div key={dragon.id}>
-              <h4 className="newName">{dragon.name}</h4>
-            </div>
+      <div className="profile--rockets">
+        <h2>My Rockets</h2>
+        <ul className="profile--rockets--ul">
+          {rockets.map(({ name, id }) => (
+            <li key={id}>{name}</li>
           ))}
-        </div>
-      </section>
+        </ul>
+      </div>
+      <div className="profile--missions">
+        <h2>My Missions</h2>
+        <ul className="profile--missions--ul">
+          {missions.map(({ mission_name, mission_id }) => (
+            <li key={mission_id}>{mission_name}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="profile--dragons">
+        <h2>My Dragons</h2>
+        <ul className="profile--dragons--ul">
+          {dragons.map(({ name, id }) => (
+            <li key={id}>{name}</li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };
-//   const reserveData = dragons.filter((data) => data.reserved === true && data);
-//   return (
-//     <>
-//       <section className={styles.profileSection}>
-//         <div className={styles.dragonsCard}>
-//           <h2 className={styles.dragonsName}>My Rockets</h2>
-//           {reserveData.map((dragon) => (
-//             <div key={dragon.id}>
-//               <h4 className={styles.name}>{dragon.name}</h4>
-//             </div>
-//           ))}
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
 
 export default Profile;
