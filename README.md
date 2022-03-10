@@ -2,12 +2,12 @@
 
 # ABB SpaceHub App
 
-![screenshot](./src/images/presentation.gif)
+![screenshot](https://github.com/ahmedtaa/abspacehub/blob/dev/appScreenshot1.png)
 
 >  Space Traveler's website was built with real live data from the SpaceX API. The application provides commercial and scientific space travel services that allow users book rockets and join selected space missions.
 
-## Live Demo
-[Link to Live Demo]()
+<!-- ## Live Demo
+[Link to Live Demo]() -->
 
 
 Additional description about the project and its features.
