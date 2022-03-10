@@ -19,14 +19,16 @@ export default function App() {
     dispatch(loadRockets());
   }, []);
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" exact element={<RocketsList />} />
-        <Route path="/missions" element={<MissionsList />} />
-        <Route path="/dragons" element={<DragonList />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" exact element={<RocketsList />} />
+          <Route path="/missions" element={<MissionsList />} />
+          <Route path="/dragons" element={<DragonList />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </Router>
+    </>
   );
 }

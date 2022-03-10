@@ -1,4 +1,5 @@
 /* eslint-disable camelcase */
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Card from 'react-bootstrap/Card';
@@ -11,6 +12,10 @@ const Profile = () => {
   const missions = useSelector((state) => state.missionsReducer).filter(
     ({ joined }) => joined,
   );
+  const dragons = useSelector((state) => state.dragons.dragons).filter(
+    ({ reserved }) => reserved,
+  );
+
   return (
     <Container>
       <Row>
@@ -34,10 +39,10 @@ const Profile = () => {
             ))}
           </ul>
         </Col>
-        <Col className="profile--rockets">
+        <Col className="profile--dragons">
           <h2>My Dragons</h2>
-          <ul className="profile--rockets--ul">
-            {rockets.map(({ name, id }) => (
+          <ul className="profile--dragons--ul">
+            {dragons.map(({ name, id }) => (
               <Card body key={id}>
                 {name}
               </Card>
