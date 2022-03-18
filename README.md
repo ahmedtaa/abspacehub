@@ -10,7 +10,7 @@
 [Link to Live Demo]() -->
 
 
-Additional description about the project and its features.
+
 
 ## Built With
 
@@ -34,7 +34,7 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple example steps.
+
 
 ### Install
   -  [Git](https://git-scm.com/downloads)
