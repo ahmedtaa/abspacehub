@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Dragons renders correctly 1`] = `
+<section
+  className="main"
+/>
+`;
+
+exports[`Test Missions renders correctly 1`] = `
+<table
+  className="table table-striped table-bordered table-hover"
+>
+  <thead>
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th>
+        Discription
+      </th>
+      <th>
+        Status
+      </th>
+    </tr>
+  </thead>
+  <tbody />
+</table>
+`;
+
+exports[`Test Rocket renders correctly 1`] = `
+<ul
+  className="rockets--container"
+/>
+`;
+
+exports[`Test Rockets renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="profile--rockets col"
+    >
+      <h2>
+        My Rockets
+      </h2>
+      <ul
+        className="profile--rockets--ul"
+      />
+    </div>
+    <div
+      className="profile--missions col"
+    >
+      <h2>
+        My Missions
+      </h2>
+      <ul
+        className="profile--missions--ul"
+      />
+    </div>
+    <div
+      className="profile--dragons col"
+    >
+      <h2>
+        My Dragons
+      </h2>
+      <ul
+        className="profile--dragons--ul"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test header component header renders correctly 1`] = `
+Array [
+  <nav
+    className="header"
+  >
+    <div
+      className="logo--header"
+    >
+      <img
+        alt="app logo"
+        className="logo--image"
+        src="app-logo.png"
+      />
+      <h1>
+        Space Travellers' Hub
+      </h1>
+    </div>
+    <ul
+      className="nav--all"
+    >
+      <li>
+        <a
+          aria-current="page"
+          className="underline"
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav--item"
+          href="/missions"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav--item"
+          href="/dragons"
+          onClick={[Function]}
+        >
+          Dragons
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav--item"
+          href="/profile"
+          onClick={[Function]}
+        >
+          Profile
+        </a>
+      </li>
+    </ul>
+  </nav>,
+  <hr />,
+]
+`;

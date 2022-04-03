@@ -12,9 +12,7 @@ const Profile = () => {
   const missions = useSelector((state) => state.missionsReducer).filter(
     ({ joined }) => joined,
   );
-  const dragons = useSelector((state) => state.dragons.dragons).filter(
-    ({ reserved }) => reserved,
-  );
+  const dragons = useSelector((state) => state.dragons.dragons);
 
   return (
     <Container>
@@ -42,11 +40,13 @@ const Profile = () => {
         <Col className="profile--dragons">
           <h2>My Dragons</h2>
           <ul className="profile--dragons--ul">
-            {dragons.map(({ name, id }) => (
-              <Card body key={id}>
-                {name}
-              </Card>
-            ))}
+            {dragons
+              ?.filter(({ reserved }) => reserved)
+              .map(({ name, id }) => (
+                <Card body key={id}>
+                  {name}
+                </Card>
+              ))}
           </ul>
         </Col>
       </Row>
